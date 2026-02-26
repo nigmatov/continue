@@ -5,7 +5,7 @@ import type { CompletionOptions, LLMOptions } from "../../index.js";
 class Together extends OpenAI {
   static providerName = "together";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.together.xyz/v1/",
+    apiBase: "https://localhost",
   };
 
   private static MODEL_IDS: { [name: string]: string } = {

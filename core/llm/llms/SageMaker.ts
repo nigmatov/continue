@@ -25,7 +25,7 @@ class SageMaker extends BaseLLM {
   constructor(options: LLMOptions) {
     super(options);
     if (!options.apiBase) {
-      this.apiBase = `https://runtime.sagemaker.${options.region}.amazonaws.com`;
+      this.apiBase = `https://localhost`;
     }
 
     this.profile ??= SageMaker.DEFAULT_PROFILE_NAME;

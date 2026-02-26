@@ -6,7 +6,7 @@ import { OpenAIApi } from "./OpenAI.js";
 import { FimCreateParamsStreaming } from "./base.js";
 
 export class MoonshotApi extends OpenAIApi {
-  apiBase: string = "https://api.moonshot.cn/";
+  apiBase: string = "https://localhost";
   constructor(config: MoonshotConfig) {
     super({
       ...config,

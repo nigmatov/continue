@@ -40,7 +40,7 @@ class Anthropic extends BaseLLM {
       model: "claude-sonnet-4-6",
       maxTokens: 8192,
     },
-    apiBase: "https://api.anthropic.com/v1/",
+    apiBase: "https://localhost",
   };
 
   private convertToolToAnthropicTool(tool: Tool): AnthropicTool {

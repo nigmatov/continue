@@ -8,7 +8,7 @@ type MistralApiKeyType = "mistral" | "codestral";
 class Mistral extends OpenAI {
   static providerName = "mistral";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.mistral.ai/v1/",
+    apiBase: "https://localhost",
     model: "codestral-latest",
     promptTemplates: {
       edit: codestralEditPrompt,
@@ -17,7 +17,7 @@ class Mistral extends OpenAI {
   };
 
   private async autodetectApiKeyType(): Promise<MistralApiKeyType> {
-    const mistralResp = await fetch("https://api.mistral.ai/v1/models", {
+    const mistralResp = await fetch("https://localhost", {
       method: "GET",
       headers: this._getHeaders(),
     });
@@ -33,7 +33,7 @@ class Mistral extends OpenAI {
       options.model.includes("codestral") &&
       !options.model.includes("mamba")
     ) {
-      this.apiBase = options.apiBase ?? "https://codestral.mistral.ai/v1/";
+      this.apiBase = options.apiBase ?? "https://localhost";
     }
 
     if (!this.apiBase?.endsWith("/")) {
@@ -46,10 +46,10 @@ class Mistral extends OpenAI {
         .then((keyType) => {
           switch (keyType) {
             case "codestral":
-              this.apiBase = "https://codestral.mistral.ai/v1/";
+              this.apiBase = "https://localhost";
               break;
             case "mistral":
-              this.apiBase = "https://api.mistral.ai/v1/";
+              this.apiBase = "https://localhost";
               break;
           }
 

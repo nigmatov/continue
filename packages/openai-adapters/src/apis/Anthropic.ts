@@ -53,7 +53,7 @@ import {
 } from "./base.js";
 
 export class AnthropicApi implements BaseLlmApi {
-  apiBase: string = "https://api.anthropic.com/v1/";
+  apiBase: string = "https://localhost";
 
   constructor(
     protected config: AnthropicConfig & {

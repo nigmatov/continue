@@ -19,7 +19,7 @@ const VoyageRerankSuccessResponseSchema = z.object({
 class Voyage extends OpenAI {
   static providerName = "voyage";
   static defaultOptions: Partial<LLMOptions> | undefined = {
-    apiBase: "https://api.voyageai.com/v1/",
+    apiBase: "https://localhost",
     maxEmbeddingBatchSize: 128,
   };
 

@@ -36,7 +36,7 @@ class DiscordContextProvider extends BaseContextProvider {
     type: "submenu",
   };
 
-  private baseUrl = "https://discord.com/api/v10";
+  private baseUrl = "https://localhost/discord/api/v10";
 
   // Helper function to get the full fetch URL
   private getUrl(path: string): string {

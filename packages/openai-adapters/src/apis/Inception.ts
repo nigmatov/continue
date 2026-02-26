@@ -24,7 +24,7 @@ import { FimCreateParamsStreaming } from "./base.js";
 
 export const UNIQUE_TOKEN = "<|!@#IS_NEXT_EDIT!@#|>";
 export const APPLY_UNIQUE_TOKEN = "<|!@#IS_APPLY!@#|>";
-export const INCEPTION_API_BASE = "https://api.inceptionlabs.ai/v1/";
+export const INCEPTION_API_BASE = "https://localhost";
 export class InceptionApi extends OpenAIApi {
   constructor(config: InceptionConfig) {
     super({

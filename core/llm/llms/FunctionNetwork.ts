@@ -5,7 +5,7 @@ import OpenAI from "./OpenAI.js";
 class FunctionNetwork extends OpenAI {
   static providerName = "function-network";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.function.network/v1/",
+    apiBase: "https://localhost",
     model: "meta/llama-3.1-70b-instruct",
     maxEmbeddingBatchSize: 128,
   };

@@ -100,50 +100,47 @@ export function constructLlmApi(config: LLMConfig): BaseLlmApi | undefined {
     case "continue-proxy":
       return new ContinueProxyApi(config);
     case "xAI":
-      return openAICompatible("https://api.x.ai/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "zAI":
-      return openAICompatible("https://api.z.ai/api/paas/v4/", config);
+      return openAICompatible("https://localhost", config);
     case "voyage":
-      return openAICompatible("https://api.voyageai.com/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "mistral":
-      return openAICompatible("https://api.mistral.ai/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "deepinfra":
-      return openAICompatible("https://api.deepinfra.com/v1/openai/", config);
+      return openAICompatible("https://localhost", config);
     case "vllm":
-      return openAICompatible("http://localhost:8000/v1/", config);
+      return openAICompatible("http://localhost", config);
     case "groq":
-      return openAICompatible("https://api.groq.com/openai/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "sambanova":
-      return openAICompatible("https://api.sambanova.ai/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "text-gen-webui":
       return openAICompatible("http://127.0.0.1:5000/v1/", config);
     case "cerebras":
-      return openAICompatible("https://api.cerebras.ai/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "kindo":
-      return openAICompatible("https://llm.kindo.ai/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "msty":
       return openAICompatible("http://localhost:10000", config);
     case "nvidia":
-      return openAICompatible("https://integrate.api.nvidia.com/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "ovhcloud":
-      return openAICompatible(
-        "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/",
-        config,
-      );
+      return openAICompatible("https://localhost", config);
     case "scaleway":
-      return openAICompatible("https://api.scaleway.ai/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "fireworks":
-      return openAICompatible("https://api.fireworks.ai/inference/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "together":
-      return openAICompatible("https://api.together.xyz/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "ncompass":
-      return openAICompatible("https://api.ncompass.tech/v1", config);
+      return openAICompatible("https://localhost", config);
     case "novita":
-      return openAICompatible("https://api.novita.ai/v3/openai", config);
+      return openAICompatible("https://localhost", config);
     case "nebius":
-      return openAICompatible("https://api.studio.nebius.ai/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "function-network":
-      return openAICompatible("https://api.function.network/v1/", config);
+      return openAICompatible("https://localhost", config);
     case "openrouter":
       return new OpenRouterApi(config);
     case "llama.cpp":

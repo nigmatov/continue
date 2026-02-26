@@ -15,7 +15,7 @@ class VertexAI extends BaseLLM {
   declare vertexProvider: "mistral" | "anthropic" | "gemini" | "unknown";
   declare anthropicInstance: Anthropic;
   declare geminiInstance: Gemini;
-  static AUTH_SCOPES = "https://www.googleapis.com/auth/cloud-platform";
+  static AUTH_SCOPES = "https://localhost";
 
   static defaultOptions: Partial<LLMOptions> | undefined = {
     maxEmbeddingBatchSize: 250,
@@ -169,9 +169,9 @@ class VertexAI extends BaseLLM {
     if (!this.apiBase) {
       if (apiKey) {
         // Express mode
-        this.apiBase = `https://aiplatform.googleapis.com/v1/`;
+        this.apiBase = `https://localhost`;
       } else {
-        this.apiBase = `https://${region}-aiplatform.googleapis.com/v1/projects/${projectId}/locations/${region}/`;
+        this.apiBase = `https://localhost`;
       }
     }
 

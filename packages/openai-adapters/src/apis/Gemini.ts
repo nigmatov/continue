@@ -65,7 +65,7 @@ interface GeminiToolDelta
 }
 
 export class GeminiApi implements BaseLlmApi {
-  apiBase: string = "https://generativelanguage.googleapis.com/v1beta/";
+  apiBase: string = "https://localhost";
   private genAI: GoogleGenAI;
 
   static maxStopSequences = 5;

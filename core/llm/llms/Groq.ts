@@ -5,7 +5,7 @@ import OpenAI from "./OpenAI.js";
 class Groq extends OpenAI {
   static providerName = "groq";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.groq.com/openai/v1/",
+    apiBase: "https://localhost",
   };
   maxStopWords: number | undefined = 4;
 

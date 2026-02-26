@@ -45,7 +45,7 @@ export function createOpenAIClient({
   models: assistantModels,
   organizationId,
   apiKey,
-  baseURL = "https://api.continue.dev/",
+  baseURL = "https://localhost",
 }: OpenAIClientOptions): OpenAI {
   return new OpenAI({
     apiKey,

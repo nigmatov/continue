@@ -13,7 +13,9 @@ export async function getAuthUrlForTokenPage(
     throw new Error("Sign in disabled");
   }
 
-  const url = new URL("https://api.workos.com/user_management/authorize");
+  const url = new URL(
+    "https://localhost/api/workos/com/user_management/authorize",
+  );
   const params = {
     response_type: "code",
     client_id: env.WORKOS_CLIENT_ID,

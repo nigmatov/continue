@@ -180,7 +180,12 @@ export function useProxyForUnrenderedSecrets(
 export const continuePropertiesSchema = z.object({
   apiKeyLocation: z.string().optional(),
   envSecretLocations: z.record(z.string(), z.string()).optional(),
-  apiBase: z.string().optional(),
+  apiBase: z
+    .string()
+    .regex(
+      /((http([s]){0,1}:\/\/){0,1}(localhost|127.0.0.1){1}(([:]){0,1}[\0-9]{4}){0,1}\/{0,1}){1}/g,
+    )
+    .optional(),
   orgScopeId: z.string().nullable(),
   env: z.record(z.string(), z.any()).optional(),
 });

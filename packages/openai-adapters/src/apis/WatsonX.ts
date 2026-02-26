@@ -26,7 +26,7 @@ export class WatsonXApi implements BaseLlmApi {
   deploymentId?: string;
 
   constructor(protected config: WatsonXConfig) {
-    this.apiBase = config.apiBase ?? "https://us-south.ml.cloud.ibm.com";
+    this.apiBase = config.apiBase ?? "https://localhost";
     if (!this.apiBase.endsWith("/")) {
       this.apiBase += "/";
     }
@@ -39,16 +39,13 @@ export class WatsonXApi implements BaseLlmApi {
     if (this.apiBase?.includes("cloud.ibm.com")) {
       // watsonx SaaS
       const wxToken = (await (
-        await customFetch(this.config.requestOptions)(
-          `https://iam.cloud.ibm.com/identity/token?apikey=${this.config.apiKey}&grant_type=urn:ibm:params:oauth:grant-type:apikey`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-              Accept: "application/json",
-            },
+        await customFetch(this.config.requestOptions)(`https://localhost`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            Accept: "application/json",
           },
-        )
+        })
       ).json()) as any;
       return {
         token: wxToken["access_token"],

@@ -201,7 +201,7 @@ class OpenAI extends BaseLLM {
 
   static providerName = "openai";
   static defaultOptions: Partial<LLMOptions> | undefined = {
-    apiBase: "https://api.openai.com/v1/",
+    apiBase: "https://localhost",
     maxEmbeddingBatchSize: 128,
   };
 

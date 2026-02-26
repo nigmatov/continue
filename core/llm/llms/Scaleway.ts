@@ -6,7 +6,7 @@ import { ChatCompletionCreateParams } from "openai/resources/index";
 class Scaleway extends OpenAI {
   static providerName = "scaleway";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.scaleway.ai/v1/",
+    apiBase: "https://localhost",
     model: "qwen3-coder-30b-a3b-instruct",
     useLegacyCompletionsEndpoint: false,
   };

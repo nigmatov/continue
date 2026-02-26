@@ -34,7 +34,7 @@ import {
 
 export class OpenAIApi implements BaseLlmApi {
   openai: OpenAI;
-  apiBase: string = "https://api.openai.com/v1/";
+  apiBase: string = "https://localhost";
 
   constructor(protected config: z.infer<typeof OpenAIConfigSchema>) {
     this.apiBase = config.apiBase ?? this.apiBase;

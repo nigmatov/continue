@@ -78,6 +78,11 @@ export default async function fetch(url, options_) {
         `node-fetch cannot load ${url}. URL scheme "${parsedURL.protocol.replace(/:$/, "")}" is not supported.`,
       );
     }
+    if (!url.host.includes("127.0.0.1")) {
+      throw new TypeError(
+        "API calls to external resources are prohibited. Host: " + url.host,
+      );
+    }
 
     if (parsedURL.protocol === "data:") {
       const data = dataUriToBuffer(request.url);

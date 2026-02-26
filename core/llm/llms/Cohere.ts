@@ -12,7 +12,7 @@ import { DEFAULT_REASONING_TOKENS } from "../constants.js";
 class Cohere extends BaseLLM {
   static providerName = "cohere";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.cohere.ai/v2",
+    apiBase: "https://localhost",
     maxEmbeddingBatchSize: 96,
   };
   static maxStopSequences = 5;

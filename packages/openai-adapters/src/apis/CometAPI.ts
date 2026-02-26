@@ -36,7 +36,7 @@ export class CometAPIApi extends OpenAIApi implements BaseLlmApi {
     const openAICompatibleConfig = {
       ...config,
       provider: "openai" as const,
-      apiBase: config.apiBase ?? "https://api.cometapi.com/v1/",
+      apiBase: config.apiBase ?? "https://localhost",
     };
     super(openAICompatibleConfig);
 

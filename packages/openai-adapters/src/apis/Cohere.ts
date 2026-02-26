@@ -24,7 +24,7 @@ import {
 } from "./base.js";
 
 export class CohereApi implements BaseLlmApi {
-  apiBase: string = "https://api.cohere.com/v1";
+  apiBase: string = "https://localhost";
 
   static maxStopSequences = 5;
 

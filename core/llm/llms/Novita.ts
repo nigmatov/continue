@@ -5,7 +5,7 @@ import type { CompletionOptions, LLMOptions } from "../../index.js";
 class Novita extends OpenAI {
   static providerName = "novita";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.novita.ai/v3/openai/",
+    apiBase: "https://localhost",
   };
 
   private static MODEL_IDS: { [name: string]: string } = {

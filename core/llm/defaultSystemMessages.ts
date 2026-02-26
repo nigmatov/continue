@@ -1,5 +1,4 @@
-export const DEFAULT_SYSTEM_MESSAGES_URL =
-  "https://github.com/continuedev/continue/blob/main/core/llm/defaultSystemMessages.ts";
+export const DEFAULT_SYSTEM_MESSAGES_URL = "https://localhost";
 
 export const CODEBLOCK_FORMATTING_INSTRUCTIONS = `\
   Always include the language and file name in the info string when you write code blocks.

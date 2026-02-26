@@ -40,7 +40,7 @@ class CometAPI extends OpenAI {
   static providerName = "cometapi";
 
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.cometapi.com/v1/",
+    apiBase: "https://localhost",
     model: "gpt-4o-mini", // Default to a commonly available model
   };
 

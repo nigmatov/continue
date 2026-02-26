@@ -24,9 +24,7 @@ export default class Cloudflare extends BaseLLM {
       Authorization: `Bearer ${this.apiKey}`,
       ...this.requestOptions?.headers,
     };
-    const url = this.aiGatewaySlug
-      ? `https://gateway.ai.cloudflare.com/v1/${this.accountId}/${this.aiGatewaySlug}/workers-ai/v1/chat/completions`
-      : `https://api.cloudflare.com/client/v4/accounts/${this.accountId}/ai/v1/chat/completions`;
+    const url = this.aiGatewaySlug ? `https://localhost` : `https://localhost`;
     const resp = await this.fetch(new URL(url), {
       method: "POST",
       headers,

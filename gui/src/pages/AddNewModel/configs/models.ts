@@ -41,7 +41,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Hermes 3 Llama 3.1 405B",
     description:
       "Nous Research's Hermes 3, a powerful instruction-tuned model built on Llama 3.1 405B with strong reasoning and tool use capabilities.",
-    refUrl: "https://nousresearch.com/hermes3",
+    refUrl: "https://localhost",
     params: {
       title: "Hermes 3 Llama 3.1 405B",
       model: "Hermes-3-Llama-3.1-405B",
@@ -55,7 +55,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Hermes 3 Llama 3.1 70B",
     description:
       "Nous Research's Hermes 3, built on Llama 3.1 70B with strong instruction following and reasoning.",
-    refUrl: "https://nousresearch.com/hermes3",
+    refUrl: "https://localhost",
     params: {
       title: "Hermes 3 Llama 3.1 70B",
       model: "Hermes-3-Llama-3.1-70B",
@@ -69,7 +69,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Hermes 4 405B",
     description:
       "Nous Research's Hermes 4, featuring enhanced reasoning with thinking tags for chain-of-thought.",
-    refUrl: "https://nousresearch.com",
+    refUrl: "https://localhost",
     params: {
       title: "Hermes 4 405B",
       model: "Hermes-4-405B",
@@ -83,7 +83,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Hermes 4 70B",
     description:
       "Nous Research's Hermes 4 70B with reasoning capabilities and 128k context.",
-    refUrl: "https://nousresearch.com",
+    refUrl: "https://localhost",
     params: {
       title: "Hermes 4 70B",
       model: "Hermes-4-70B",
@@ -97,7 +97,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Hermes 4.3 36B",
     description:
       "Nous Research's Hermes 4.3 36B, a compact reasoning model with 128k context.",
-    refUrl: "https://nousresearch.com",
+    refUrl: "https://localhost",
     params: {
       title: "Hermes 4.3 36B",
       model: "Hermes-4.3-36B",
@@ -161,7 +161,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "gpt-oss-20b",
     description:
       "OpenAI's 20B open-weight model with native tool use and reasoning for agentic tasks.",
-    refUrl: "https://huggingface.co/openai/gpt-oss-20b",
+    refUrl: "https://localhost",
     params: {
       title: "gpt-oss-20b",
       model: "openai/gpt-oss-20b",
@@ -192,7 +192,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "gpt-oss-120b",
     description:
       "OpenAI's 120B flagship open-weight model built for complex, high‑reasoning agentic workflows.",
-    refUrl: "https://huggingface.co/openai/gpt-oss-120b",
+    refUrl: "https://localhost",
     params: {
       title: "gpt-oss-120b",
       model: "openai/gpt-oss-120b",
@@ -438,7 +438,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "EXAONE 4.0.1-32B",
     description:
       "LG AI Research's 32B model with integrated reasoning and agentic tool use capabilities.",
-    refUrl: "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0.1-32B",
+    refUrl: "https://localhost",
     params: {
       title: "EXAONE-4.0.1-32B",
       model: "LGAI-EXAONE/EXAONE-4.0.1-32B",
@@ -451,7 +451,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "EXAONE 4.0-1.2B",
     description:
       "Compact EXAONE 4.0 model suitable for on-device use while retaining tool calling support.",
-    refUrl: "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B",
+    refUrl: "https://localhost",
     params: {
       title: "EXAONE-4.0-1.2B",
       model: "LGAI-EXAONE/EXAONE-4.0-1.2B",
@@ -463,7 +463,7 @@ export const models: { [key: string]: ModelPackage } = {
   moonshotChat: {
     title: "Moonshot Chat",
     description: "Moonshot AI provides high-performance large language models",
-    refUrl: "https://platform.moonshot.cn/",
+    refUrl: "https://localhost",
     params: {
       title: "Moonshot-v1-8k",
       model: "moonshot-v1-8k",
@@ -500,7 +500,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Kimi K2",
     description:
       "Moonshot AI's Kimi K2, a powerful MoE model with strong coding and tool-use capabilities",
-    refUrl: "https://platform.moonshot.cn/",
+    refUrl: "https://localhost",
     params: {
       title: "Kimi K2",
       model: "kimi-k2",
@@ -514,7 +514,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Kimi K2.5",
     description:
       "Moonshot AI's Kimi K2.5, the latest generation model with enhanced reasoning",
-    refUrl: "https://platform.moonshot.cn/",
+    refUrl: "https://localhost",
     params: {
       title: "Kimi K2.5",
       model: "kimi-k2.5",
@@ -527,7 +527,7 @@ export const models: { [key: string]: ModelPackage } = {
   glm5: {
     title: "GLM-5",
     description: "Z.ai's flagship GLM-5 model with 128k context",
-    refUrl: "https://z.ai/model-api",
+    refUrl: "https://localhost",
     params: {
       title: "GLM-5",
       model: "glm-5",
@@ -540,7 +540,7 @@ export const models: { [key: string]: ModelPackage } = {
   glm47: {
     title: "GLM-4.7",
     description: "Z.ai's latest GLM-4.7 model with 128k context",
-    refUrl: "https://z.ai/model-api",
+    refUrl: "https://localhost",
     params: {
       title: "GLM-4.7",
       model: "glm-4.7",
@@ -553,7 +553,7 @@ export const models: { [key: string]: ModelPackage } = {
   glm45: {
     title: "GLM-4.5",
     description: "Z.ai's GLM-4.5 model with 128k context",
-    refUrl: "https://z.ai/model-api",
+    refUrl: "https://localhost",
     params: {
       title: "GLM-4.5",
       model: "glm-4.5",
@@ -2099,7 +2099,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Qwen 3 Coder 30B A3B",
     description:
       "Qwen3-Coder-30B-A3B-Instruct is Alibaba Cloud's advanced code-specialized LLM that excels in agentic coding tasks and supports extended context lengths for handling large code repositories.",
-    refUrl: "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    refUrl: "https://localhost",
     params: {
       title: "Qwen 3 Coder 30B A3B",
       model: "qwen3-coder-30b-a3b",
@@ -2113,7 +2113,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Qwen 2.5 VL 72B",
     description:
       "Qwen2.5-VL is a powerful vision-language model, designed for advanced image understanding. It can generate detailed image captions, analyze documents, OCR, detect objects, and answer questions based on visuals.",
-    refUrl: "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+    refUrl: "https://localhost",
     params: {
       title: "Qwen 2.5 VL 72B",
       model: "qwen2.5-vl-72b",
@@ -2127,8 +2127,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Mistral Small 3.2 24B",
     description:
       "Building upon Mistral Small 3 (2501), Mistral Small 3.2 (2506) adds state-of-the-art vision understanding and enhances long context capabilities up to 128k tokens without compromising text performance.",
-    refUrl:
-      "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    refUrl: "https://localhost",
     params: {
       title: "Mistral Small 3.2 24B",
       model: "mistral-small-3.2-24b",
@@ -2142,7 +2141,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Grok Code Fast 1",
     description:
       "A speedy and economical reasoning model that excels at agentic coding",
-    refUrl: "https://docs.x.ai/docs/models/grok-code-fast-1",
+    refUrl: "https://localhost",
     params: {
       title: "Grok Code Fast 1",
       model: "grok-code-fast-1",
@@ -2155,7 +2154,7 @@ export const models: { [key: string]: ModelPackage } = {
   grok4FastReasoning: {
     title: "Grok 4 Fast Reasoning",
     description: "xAI's latest advancement in cost-efficient reasoning models",
-    refUrl: "https://docs.x.ai/docs/models/grok-4-fast-reasoning",
+    refUrl: "https://localhost",
     params: {
       title: "Grok 4 Fast Reasoning",
       model: "grok-4-fast-reasoning",
@@ -2168,7 +2167,7 @@ export const models: { [key: string]: ModelPackage } = {
   grok4FastNonReasoning: {
     title: "Grok 4 Fast Non-Reasoning",
     description: "xAI's latest advancement in cost-efficient models",
-    refUrl: "https://docs.x.ai/docs/models/grok-4-fast-non-reasoning",
+    refUrl: "https://localhost",
     params: {
       title: "Grok 4 Fast Non-Reasoning",
       model: "grok-4-fast-non-reasoning",
@@ -2182,7 +2181,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Grok 4.1 Fast Reasoning",
     description:
       "xAI's upgraded reasoning model offering strong performance in complex tasks.",
-    refUrl: "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+    refUrl: "https://localhost",
     params: {
       title: "Grok 4.1 Fast Reasoning",
       model: "grok-4-1-fast-reasoning",
@@ -2196,7 +2195,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Grok 4.1 Fast Non-Reasoning",
     description:
       "xAI's upgraded non-reasoning model optimized for speed and efficiency.",
-    refUrl: "https://docs.x.ai/docs/models/grok-4-1-fast-non-reasoning",
+    refUrl: "https://localhost",
     params: {
       title: "Grok 4.1 Fast Non-Reasoning",
       model: "grok-4-1-fast-non-reasoning",
@@ -2210,7 +2209,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Grok 4",
     description:
       "xAI's latest and greatest flagship model, offering strong performance in natural language, math and reasoning.",
-    refUrl: "https://docs.x.ai/docs/models/grok-4",
+    refUrl: "https://localhost",
     params: {
       title: "Grok 4",
       model: "grok-4",
@@ -2224,7 +2223,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Grok 3",
     description:
       "Excels at enterprise use cases like data extraction, coding, and text summarization",
-    refUrl: "https://docs.x.ai/docs/models/grok-3",
+    refUrl: "https://localhost",
     params: {
       title: "Grok 3",
       model: "grok-3",
@@ -2238,7 +2237,7 @@ export const models: { [key: string]: ModelPackage } = {
     title: "Grok 3 Mini",
     description:
       "A lightweight model that thinks before responding. Fast, smart, and great for logic-based tasks that do not require deep domain knowledge.",
-    refUrl: "https://docs.x.ai/docs/models/grok-3-mini",
+    refUrl: "https://localhost",
     params: {
       title: "Grok 3 Mini",
       model: "grok-3-mini",
@@ -3214,7 +3213,7 @@ export const models: { [key: string]: ModelPackage } = {
   mimoV2Flash: {
     title: "mimo-v2-flash",
     description: "Xiaomi's fast and efficient language model",
-    refUrl: "https://platform.xiaomimimo.com/",
+    refUrl: "https://localhost",
     params: {
       title: "mimo-v2-flash",
       model: "mimo-v2-flash",

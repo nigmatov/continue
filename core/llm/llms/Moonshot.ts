@@ -7,7 +7,7 @@ import OpenAI from "./OpenAI.js";
 class Moonshot extends OpenAI {
   static providerName = "moonshot";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.moonshot.cn/v1/",
+    apiBase: "https://localhost",
     model: "moonshot-v1-8k",
     promptTemplates: {
       edit: osModelsEditPrompt,

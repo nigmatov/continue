@@ -141,7 +141,7 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
       //   params: { ...models.AUTODETECT.params, title: "CometAPI" },
       // },
     ],
-    apiKeyUrl: "https://api.cometapi.com/console/token",
+    apiKeyUrl: "https://localhost",
   },
   openai: {
     title: "OpenAI",
@@ -184,7 +184,7 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
       },
       ...completionParamsInputsConfigs,
     ],
-    apiKeyUrl: "https://platform.openai.com/account/api-keys",
+    apiKeyUrl: "https://localhost",
   },
   anthropic: {
     title: "Anthropic",
@@ -219,7 +219,7 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
       models.claude41Opus,
       models.claude4Sonnet,
     ],
-    apiKeyUrl: "https://console.anthropic.com/account/keys",
+    apiKeyUrl: "https://localhost",
   },
   openrouter: {
     title: "OpenRouter",
@@ -230,7 +230,7 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
     icon: "openrouter.png",
     tags: [ModelProviderTags.RequiresApiKey],
     refPage: "openrouter",
-    apiKeyUrl: "https://openrouter.ai/settings/keys",
+    apiKeyUrl: "https://localhost",
     collectInputFor: [
       {
         inputType: "text",
@@ -252,7 +252,7 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
     icon: "moonshot.png",
     tags: [ModelProviderTags.RequiresApiKey],
     refPage: "moonshot",
-    apiKeyUrl: "https://docs.moonshot.cn/docs/getting-started",
+    apiKeyUrl: "https://localhost",
     packages: [models.kimiK2, models.kimiK25, models.moonshotChat],
     collectInputFor: [
       {
@@ -284,7 +284,7 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
       },
       ...completionParamsInputsConfigs,
     ],
-    apiKeyUrl: "https://z.ai/manage-apikey/apikey-list",
+    apiKeyUrl: "https://localhost",
   },
   "function-network": {
     title: "Function Network",
@@ -309,7 +309,7 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
       ...completionParamsInputsConfigs,
     ],
     packages: [models.llama31Chat, models.deepseek],
-    apiKeyUrl: "https://function.network/join-waitlist",
+    apiKeyUrl: "https://localhost",
   },
   ovhcloud: {
     title: "OVHcloud",
@@ -349,7 +349,7 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
       models.gptOss120B,
       models.deepseekR1DistillLlama70B,
     ],
-    apiKeyUrl: "https://endpoints.ai.cloud.ovh.net/",
+    apiKeyUrl: "https://localhost",
   },
   scaleway: {
     title: "Scaleway",
@@ -379,7 +379,7 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
       models.mistralNemo,
       models.Qwen25Coder32b,
     ],
-    apiKeyUrl: "https://console.scaleway.com/iam/api-keys",
+    apiKeyUrl: "https://localhost",
   },
   azure: {
     title: "Azure OpenAI",
@@ -392,8 +392,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
     icon: "azure.png",
     tags: [ModelProviderTags.RequiresApiKey],
     refPage: "azure",
-    apiKeyUrl:
-      "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+    apiKeyUrl: "https://localhost",
     packages: [models.gpt4o],
     params: {
       apiKey: "",
@@ -463,7 +462,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       models.mistral8x7b,
       models.mistral7b,
     ],
-    apiKeyUrl: "https://console.mistral.ai/codestral",
+    apiKeyUrl: "https://localhost",
   },
   mimo: {
     title: "Xiaomi Mimo",
@@ -484,7 +483,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       },
       ...completionParamsInputsConfigs,
     ],
-    apiKeyUrl: "https://platform.xiaomimimo.com/",
+    apiKeyUrl: "https://localhost",
   },
   ollama: {
     title: "Ollama",
@@ -509,7 +508,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       ...completionParamsInputsConfigs,
       { ...apiBaseInput, defaultValue: "http://localhost:11434" },
     ],
-    downloadUrl: "https://ollama.ai/download",
+    downloadUrl: "https://localhost",
   },
   cohere: {
     title: "Cohere",
@@ -544,7 +543,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       models.c4aiAyaExpanse32B,
       models.c4aiAyaExpanse8B,
     ],
-    apiKeyUrl: "https://docs.cohere.com/v2/docs/rate-limits",
+    apiKeyUrl: "https://localhost",
   },
   groq: {
     title: "Groq",
@@ -577,7 +576,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
         },
       },
     ],
-    apiKeyUrl: "https://console.groq.com/keys",
+    apiKeyUrl: "https://localhost",
   },
   deepseek: {
     title: "DeepSeek",
@@ -602,7 +601,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       models.deepseekChatApi,
       models.deepseekReasonerApi,
     ],
-    apiKeyUrl: "https://platform.deepseek.com/api_keys",
+    apiKeyUrl: "https://localhost",
   },
   together: {
     title: "TogetherAI",
@@ -634,7 +633,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       p.params.contextLength = 4096;
       return p;
     }),
-    apiKeyUrl: "https://api.together.xyz/settings/api-keys",
+    apiKeyUrl: "https://localhost",
   },
   ncompass: {
     title: "nCompass",
@@ -666,7 +665,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       p.params.contextLength = 4096;
       return p;
     }),
-    apiKeyUrl: "https://app.ncompass.tech/api-settings",
+    apiKeyUrl: "https://localhost",
   },
   novita: {
     title: "NovitaAI",
@@ -699,8 +698,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       p.params.contextLength = 4096;
       return p;
     }),
-    apiKeyUrl:
-      "https://novita.ai/settings/key-management?utm_source=github_continuedev&utm_medium=github_readme&utm_campaign=github_link",
+    apiKeyUrl: "https://localhost",
   },
   gemini: {
     title: "Google Gemini API",
@@ -727,7 +725,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       models.gemini25Flash,
       models.gemini25FlashLite,
     ],
-    apiKeyUrl: "https://aistudio.google.com/app/apikey",
+    apiKeyUrl: "https://localhost",
   },
   xAI: {
     title: "xAI",
@@ -760,7 +758,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       models.grok3Fast,
       models.grok3Mini,
     ],
-    apiKeyUrl: "https://console.x.ai/",
+    apiKeyUrl: "https://localhost",
   },
   lemonade: {
     title: "Lemonade",
@@ -792,7 +790,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
         required: true,
       },
     ],
-    downloadUrl: "http://lemonade-server.ai",
+    downloadUrl: "http://localhost",
   },
   lmstudio: {
     title: "LM Studio",
@@ -817,7 +815,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       ...openSourceModels,
     ],
     collectInputFor: [...completionParamsInputsConfigs],
-    downloadUrl: "https://lmstudio.ai/",
+    downloadUrl: "https://localhost",
   },
   llamafile: {
     title: "llamafile",
@@ -829,8 +827,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
     tags: [ModelProviderTags.Local, ModelProviderTags.OpenSource],
     packages: openSourceModels,
     collectInputFor: [...completionParamsInputsConfigs],
-    downloadUrl:
-      "https://github.com/Mozilla-Ocho/llamafile?tab=readme-ov-file#quickstart",
+    downloadUrl: "https://localhost",
   },
   replicate: {
     title: "Replicate",
@@ -860,7 +857,7 @@ Select the \`GPT-4o\` model below to complete your provider configuration, but n
       models.mistralOs,
       models.claude4Sonnet,
     ],
-    apiKeyUrl: "https://replicate.com/account/api-tokens",
+    apiKeyUrl: "https://localhost",
   },
   "llama.cpp": {
     title: "llama.cpp",
@@ -884,7 +881,7 @@ After it's up and running, you can start using Continue.`,
     tags: [ModelProviderTags.Local, ModelProviderTags.OpenSource],
     packages: openSourceModels,
     collectInputFor: [...completionParamsInputsConfigs],
-    downloadUrl: "https://github.com/ggerganov/llama.cpp",
+    downloadUrl: "https://localhost",
   },
   "openai-aiohttp": {
     title: "Other OpenAI-compatible API",
@@ -934,7 +931,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
         inputType: "text",
         key: "apiBase",
         label: "watsonx URL",
-        placeholder: "e.g. http://us-south.dataplatform.cloud.ibm.com",
+        placeholder: "e.g. http://localhost",
         required: true,
       },
       {
@@ -968,8 +965,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
       },
       ...completionParamsInputsConfigs,
     ],
-    apiKeyUrl:
-      "https://dataplatform.cloud.ibm.com/registration/stepone?context=wx",
+    apiKeyUrl: "https://localhost",
     icon: "WatsonX.png",
     tags: [ModelProviderTags.RequiresApiKey],
     packages: [
@@ -1017,7 +1013,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
       models.qwen332B,
       models.gptOss120b,
     ],
-    apiKeyUrl: "https://cloud.sambanova.ai/apis",
+    apiKeyUrl: "https://localhost",
   },
   cerebras: {
     title: "Cerebras",
@@ -1047,7 +1043,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
         },
       },
     ],
-    apiKeyUrl: "https://cloud.cerebras.ai/",
+    apiKeyUrl: "https://localhost",
   },
   vertexai: {
     title: "VertexAI",
@@ -1086,7 +1082,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
     tags: [ModelProviderTags.RequiresApiKey],
     params: {
       apiKey: "",
-      apiBase: "https://api.asksage.ai/server/",
+      apiBase: "https://localhost",
     },
     collectInputFor: [
       {
@@ -1102,7 +1098,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
         label: "API Base URL",
         placeholder: "Enter your Ask Sage API base URL",
         required: true,
-        defaultValue: "https://api.asksage.ai/server/",
+        defaultValue: "https://localhost",
       },
       ...completionParamsInputsConfigs,
     ],
@@ -1148,7 +1144,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
       models.asksagegroqllama4scout,
       models.asksagegrok4,
     ],
-    apiKeyUrl: "https://chat.asksage.ai/",
+    apiKeyUrl: "https://localhost",
   },
   nebius: {
     title: "Nebius AI Studio",
@@ -1191,7 +1187,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
       models.deepseekCoder2Lite,
       models.olmo7b,
     ],
-    apiKeyUrl: "https://studio.nebius.ai/settings/api-keys",
+    apiKeyUrl: "https://localhost",
   },
   siliconflow: {
     title: "SiliconFlow",
@@ -1216,7 +1212,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
       models.Hunyuan_a52b,
       models.Llama31Nemotron_70b,
     ],
-    apiKeyUrl: "https://cloud.siliconflow.cn/account/ak",
+    apiKeyUrl: "https://localhost",
   },
   venice: {
     title: "Venice",
@@ -1234,7 +1230,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
       },
     ],
     packages: [{ ...models.AUTODETECT }],
-    apiKeyUrl: "https://venice.ai/chat",
+    apiKeyUrl: "https://localhost",
   },
   tars: {
     title: "Tetrate Agent Router Service",
@@ -1260,7 +1256,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
         },
       },
     ],
-    apiKeyUrl: "https://api.router.tetrate.ai/",
+    apiKeyUrl: "https://localhost",
   },
   nous: {
     title: "Nous Research",
@@ -1273,7 +1269,7 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
     icon: "nous.png",
     tags: [ModelProviderTags.RequiresApiKey, ModelProviderTags.OpenSource],
     params: {
-      apiBase: "https://inference-api.nousresearch.com/v1",
+      apiBase: "https://localhost",
     },
     collectInputFor: [
       {
@@ -1292,6 +1288,6 @@ To get started, [register](https://dataplatform.cloud.ibm.com/registration/stepo
       models.hermes3Llama31_70b,
       models.hermes3Llama31_405b,
     ],
-    apiKeyUrl: "https://portal.nousresearch.com",
+    apiKeyUrl: "https://localhost",
   },
 };

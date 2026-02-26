@@ -8,7 +8,7 @@ class Nvidia extends OpenAI {
   maxStopWords = 4;
   static providerName = "nvidia";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://integrate.api.nvidia.com/v1/",
+    apiBase: "https://localhost",
     useLegacyCompletionsEndpoint: false,
     maxEmbeddingBatchSize: 96,
   };

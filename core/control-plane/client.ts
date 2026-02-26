@@ -47,7 +47,8 @@ export interface CreditStatus {
 }
 
 export const TRIAL_PROXY_URL =
-  "https://proxy-server-blue-l6vsfbzhba-uw.a.run.app";
+  //"https://proxy-server-blue-l6vsfbzhba-uw.a.run.app";
+  "http://localhost";
 
 export interface RemoteSessionMetadata extends BaseSessionMetadata {
   isRemote: true;

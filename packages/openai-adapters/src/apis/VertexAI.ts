@@ -32,7 +32,7 @@ export class VertexAIApi implements BaseLlmApi {
   mistralInstance: OpenAIApi;
   private clientPromise?: Promise<AuthClient | void>;
   private genAI?: GoogleGenAI;
-  static AUTH_SCOPES = "https://www.googleapis.com/auth/cloud-platform";
+  static AUTH_SCOPES = "https://localhost";
 
   constructor(protected config: VertexAIConfig) {
     this.setupAuthentication();
@@ -150,11 +150,11 @@ export class VertexAIApi implements BaseLlmApi {
 
     if (apiKey) {
       // Express mode
-      return "https://aiplatform.googleapis.com/v1/";
+      return "https://localhost";
     } else {
       // Standard mode
       const { region, projectId } = env!;
-      return `https://${region}-aiplatform.googleapis.com/v1/projects/${projectId}/locations/${region}/`;
+      return `https://localhost`;
     }
   }
 

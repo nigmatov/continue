@@ -7,3 +7,6 @@ video
 .intellijPlatform
 src/testIntegration/kotlin/com/github/continuedev/continueintellijextension/test-continue/*
 !src/testIntegration/kotlin/com/github/continuedev/continueintellijextension/test-continue/config.json
+/src/test/kotlin/com/github/continuedev/continueintellijextension/test-continue/config.yaml
+/src/test/kotlin/com/github/continuedev/continueintellijextension/test-continue/index/autocompleteCache.sqlite
+/src/test/kotlin/com/github/continuedev/continueintellijextension/test-continue/index/globalContext.json

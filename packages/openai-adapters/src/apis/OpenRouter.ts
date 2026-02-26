@@ -12,7 +12,7 @@ export class OpenRouterApi extends OpenAIApi {
   constructor(config: OpenRouterConfig) {
     super({
       ...config,
-      apiBase: config.apiBase ?? "https://openrouter.ai/api/v1/",
+      apiBase: config.apiBase ?? "https://localhost",
     });
   }
 

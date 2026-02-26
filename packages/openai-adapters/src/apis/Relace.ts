@@ -37,7 +37,7 @@ type UsageInfo = Pick<
 
 // Relace only supports apply through a /v1/apply endpoint
 export class RelaceApi implements BaseLlmApi {
-  private apiBase = "https://instantapply.endpoint.relace.run/v1/";
+  private apiBase = "https://localhost";
 
   constructor(private readonly config: z.infer<typeof OpenAIConfigSchema>) {
     this.apiBase = config.apiBase ?? this.apiBase;

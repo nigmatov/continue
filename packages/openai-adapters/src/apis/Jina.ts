@@ -19,7 +19,7 @@ import {
 } from "./base.js";
 
 export class JinaApi implements BaseLlmApi {
-  apiBase: string = "https://api.jina.ai/v1/";
+  apiBase: string = "https://localhost";
 
   constructor(protected config: JinaConfig) {
     this.apiBase = config.apiBase ?? this.apiBase;

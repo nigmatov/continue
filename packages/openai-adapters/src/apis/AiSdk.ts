@@ -31,12 +31,12 @@ const PROVIDER_MAP: Record<string, AiSdkProviderCreator> = {
   anthropic: (options) =>
     createOpenAI({
       ...options,
-      baseURL: options.baseURL ?? "https://api.anthropic.com/v1/",
+      baseURL: options.baseURL ?? "https://localhost",
     }),
   openrouter: (options) =>
     createOpenAI({
       ...options,
-      baseURL: options.baseURL ?? "https://openrouter.ai/api/v1/",
+      baseURL: options.baseURL ?? "https://localhost",
     }),
 };
 

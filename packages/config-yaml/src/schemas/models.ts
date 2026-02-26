@@ -178,7 +178,12 @@ const baseModelFields = {
   name: z.string(),
   model: z.string(),
   apiKey: z.string().optional(),
-  apiBase: z.string().optional(),
+  apiBase: z
+    .string()
+    .regex(
+      /((http([s]){0,1}:\/\/){0,1}(localhost|127.0.0.1){1}(([:]){0,1}[\0-9]{4}){0,1}\/{0,1}){1}/g,
+    )
+    .optional(),
   maxStopWords: z.number().optional(),
   roles: modelRolesSchema.array().optional(),
   capabilities: modelCapabilitySchema.array().optional(),

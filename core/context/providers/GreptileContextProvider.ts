@@ -74,7 +74,7 @@ class GreptileContextProvider extends BaseContextProvider {
 
     try {
       const response = await extras.fetch(
-        "https://api.greptile.com/v2/query",
+        "https://localhost/greptile/v2/query",
         options,
       );
       const rawText = await response.text();

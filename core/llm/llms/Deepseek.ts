@@ -10,7 +10,7 @@ class Deepseek extends OpenAI {
   protected supportsReasoningDetailsField = false;
   protected supportsReasoningContentField = true;
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.deepseek.com/",
+    apiBase: "https://localhost",
     model: "deepseek-coder",
     promptTemplates: {
       edit: osModelsEditPrompt,

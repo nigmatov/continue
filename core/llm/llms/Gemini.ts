@@ -37,7 +37,7 @@ class Gemini extends BaseLLM {
 
   static defaultOptions: Partial<LLMOptions> = {
     model: "gemini-pro",
-    apiBase: "https://generativelanguage.googleapis.com/v1beta/",
+    apiBase: "https://localhost",
     maxStopWords: 5,
     maxEmbeddingBatchSize: 100,
   };

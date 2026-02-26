@@ -62,7 +62,7 @@ class Bedrock extends BaseLLM {
   constructor(options: LLMOptions) {
     super(options);
     if (!options.apiBase) {
-      this.apiBase = `https://bedrock-runtime.${options.region}.amazonaws.com`;
+      this.apiBase = `https://localhost/${options.region}/amazonaws/com`;
     }
 
     this.requestOptions = {

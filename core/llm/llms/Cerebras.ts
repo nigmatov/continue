@@ -6,7 +6,7 @@ import OpenAI from "./OpenAI.js";
 class Cerebras extends OpenAI {
   static providerName = "cerebras";
   static defaultOptions: Partial<LLMOptions> = {
-    apiBase: "https://api.cerebras.ai/v1/",
+    apiBase: "https://localhost",
   };
   maxStopWords: number | undefined = 4;
 
